@@ -5,21 +5,43 @@
   <meta http-equiv="X-UA-Compatible" content="IE-edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Nma FEND portfolio</title>
-  <link type="stylesheet" href="css/boostrap.min.css">
-  <link type="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="container">
     <header class="row">
       <section class="col-md-6">
-        <img class="img-responsive" alt="Udacity Logo" src="http://placekitten.com/100/100"/>
+        <img class="img-responsive" alt="Logo" src="http://placekitten.com/100/100"/>
+        <div class="col-md-6">
+          <h1 class="text-right text-uppercase">Nick Ma</h1>
+          <h2 class="text-right text-uppercase">FEND Portfolio</h2>
+        </div>
       </section>
-      <section class="col-md-6"></section>
     </header>
+    <hr>
     <content class="row">
       <section class="col-md-12">
-        <hr>
-        <img class="img-responsive" alt="data" src="http://placekitten.com/1140/1000"/>
+        <img class="img-responsive" alt="data" src="http://placekitten.com/1140/1000" />
+        <h1>Featured Work</h1>
+        <div class="row">
+          <article class="col-md-4">
+            <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" />
+            <h3>Blog on Infrastructure</h3>
+            <h4>http://www.codesheppard.com</h4>
+          </article>
+          <article class="col-md-4">
+            <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" />
+            <h3>Testcase Runner on Docker</h3>
+            <h4>https://github.com/nma/coding-pytest-extension</h4>
+          </article>
+          <article class="col-md-4">
+            <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" />
+            <h3>AutoCompleter in Java</h3>
+            <h4>https://github.com/nma/AutoCompleter</h4>
+          </article>
+        </div>
       </section>
     </content>
     <footer class="row">
@@ -28,7 +50,7 @@
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <header class="modal-header">
@@ -48,6 +70,7 @@
   </div>
 
   <!-- scripts here -->
-  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>   <script type="text/javascript" src="js/bootstrap.min.js"></script> 
+  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script> 
 </body>
 </html>
