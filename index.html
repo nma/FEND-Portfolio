@@ -7,62 +7,90 @@
   <title>Nma FEND portfolio</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <div class="container">
     <header class="row">
-      <div class="col-md-6 col-xs-6">
-        <img class="img-responsive" alt="Logo" src="http://placekitten.com/100/100"/>
+      <div class="col-md-6 col-xs-4 fluid-img">
+        <img class="logo img-responsive" alt="Logo" src="img/buiscat.jpg"/>
       </div>
-      <div class="col-md-6 col-xs-6">
-        <h1 class="text-right text-uppercase">Nick Ma</h1>
-        <h4 class="text-right text-uppercase">FEND Portfolio</h4>
+      <div class="col-md-6 col-xs-8">
+        <h1 class="text-right text-uppercase title">Jane Doette</h1>
+        <h4 class="text-right text-uppercase subtitle">Front-End Ninja</h4>
       </div>
     </header>
     <hr>
     <content class="row">
-      <section class="col-md-12">
-        <img class="img-responsive" alt="data" src="http://placekitten.com/1140/1000" />
-        <h1>Featured Work</h1>
+      <section class="col-md-12 portfolio-section">
+        <img class="img-responsive"
+             alt="data"
+             src="http://placekitten.com/1140/500"/>
+        <h1 class="featured-title">Featured Work</h1>
         <div class="row">
           <article class="col-md-4">
-            <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" />
-            <h3>Blog on Infrastructure</h3>
-            <h4>http://www.codesheppard.com</h4>
+            <figure>
+              <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" data-toggle="modal" data-target="#myModal"/>
+              <figcaption>
+                <h3 class="text-uppercase text-center">Appify</h3>
+                <a href="https://github.com/udacity/bokeh"><p class="text-center">https://github.com/udacity/appify</p></a>
+              </figcaption>
+            </figure>
           </article>
           <article class="col-md-4">
-            <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" />
-            <h3>Testcase Runner on Docker</h3>
-            <h4>https://github.com/nma/coding-pytest-extension</h4>
+            <figure>
+              <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" data-toggle="modal" data-target="#myModal"/>
+              <figcaption>
+                <h3 class="text-uppercase text-center">Sunflower</h3>
+                <a href="https://github.com/udacity/bokeh"><p class="text-center">https://github.com/udacity/sunflower</p></a>
+              </figcaption>
+            </figure>
           </article>
           <article class="col-md-4">
-            <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" />
-            <h3>AutoCompleter in Java</h3>
-            <h4>https://github.com/nma/AutoCompleter</h4>
+            <figure>
+              <img class="img-responsive" alt="show-case sample" src="http://placekitten.com/550/300" data-toggle="modal" data-target="#myModal"/>
+              <figcaption>
+                <h3 class="text-uppercase text-center">Bokeh</h3>
+                <a href="https://github.com/udacity/bokeh"><p class="text-center">https://github.com/udacity/bokeh</p></a>
+              </figcaption>
+            </figure>
           </article>
         </div>
       </section>
     </content>
+    <hr>
     <footer class="row">
-      <section class="col-md-12">
+      <section class="col-sm-6 col-xs-12">
+        <h2>About</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin facilisis nisi, quis ultrices elit euismod eget. Mauris iaculis malesuada ultrices. Proin volutpat hendrerit nunc ut maximus. Duis tempor, enim convallis gravida suscipit.
+        </p>
+      </section>
+      <section class="col-sm-6 col-xs-12">
+        <h2>Contact</h2>
+        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+        <span>jane@example.com</span>
+        <br/>
+        <span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+        <span>123-456-789</span>
       </section>
     </footer>
 
     <!-- Modal -->
-    <div class="modal fade hide" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <header class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            <h4 class="modal-title" id="myModalLabel">Project Overview</h4>
           </header>
           <content class="modal-body">
-            ...
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur et odio faucibus, facilisis velit auctor, cursus purus. Cras placerat vulputate urna non malesuada. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque sodales dignissim metus, eget maximus magna ornare vitae. Aliquam a laoreet massa. Nunc consectetur sit amet ante at maximus. Sed eget purus sit amet elit auctor sollicitudin. Aenean mollis lacus eget velit lacinia, eget molestie arcu malesuada. Maecenas scelerisque magna in blandit ornare. Phasellus ac tellus quis ex porttitor pellentesque. Nulla rutrum ut erat id venenatis. Sed laoreet laoreet ligula scelerisque varius.
+            </p>
           </content>
           <footer class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </footer>
         </div>
       </div>
